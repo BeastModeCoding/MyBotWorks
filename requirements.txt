@@ -1,1 +1,7 @@
 vk_api
+time
+json
+sys
+random
+pandas
+pymorphy2
