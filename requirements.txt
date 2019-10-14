@@ -1,5 +1,3 @@
 vk_api
-sys
-random
 pandas
 pymorphy2
