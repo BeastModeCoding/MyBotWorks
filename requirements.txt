@@ -1,5 +1,4 @@
 vk_api
-json
 sys
 random
 pandas
