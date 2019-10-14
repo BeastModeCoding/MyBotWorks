@@ -451,12 +451,13 @@ def SendSearchResults(words, bodies, formated_headers):
         answer.append(bodies[i])
     if len(answer) == 0:
         # Если поиск ведется через вкладку "Меню"
-        if bodies == TextBodies:
-            SendMessage(id, 'По запросу "{}" ничего не нашлось. Ваш запрос будет перенаправлен модераторам. Ожидайте ответа в течение 24 часов'.format(body), kb_vyh)
-        # В случае неудачного поиска через "Меню" запрос отправляется модератору; пользователю сообщение о скором ответе в течение 24 часов
-            person = SayMyName(id) + ' ' + SayMySurName(id)
-            SendMessage(132255549, 'Вот этот человек ->{0}\nПопытался найти какой-то бред: {1}'.format(person, body), None)
-        else:
+#         if bodies == TextBodies:
+#             SendMessage(id, 'По запросу "{}" ничего не нашлось'. # Ваш запрос будет перенаправлен модераторам. Ожидайте ответа в течение 24 часов'
+# 			.format(body), kb_vyh)
+#         # В случае неудачного поиска через "Меню" запрос отправляется модератору; пользователю сообщение о скором ответе в течение 24 часов
+#             person = SayMyName(id) + ' ' + SayMySurName(id)
+#             SendMessage(132255549, 'Вот этот человек -> {0}\nПопытался найти какой-то бред: {1}'.format(person, body), None)
+#         else:
             SendMessage(id, 'По запросу "{}" ничего не нашлось', kb_vyh)
     else:
         if CheckParam(id, "InLibrary"):
