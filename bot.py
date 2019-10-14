@@ -13,7 +13,7 @@ print("Step 2. Connecting")
 morph = MorphAnalyzer()    # Обработка слов на русском языке
 alf = list("абвгдеёжзийклмнопрстуфхцчшщъыьэюя ")
 # dct = open("syn.txt", "r", encoding="utf-8").read().split("\n")
-# bad_words = open("bad_words.txt", "r", encoding="utf-8").read().split("\n")
+bad_words = open("bad_words.txt", "r", encoding="utf-8").read().split("\n")
 # frmt_dct = []
 # for txt in dct:                         # ???
 #     frmt_dct.append(txt.split("|"))     # ???
